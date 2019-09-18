@@ -1,6 +1,7 @@
 # Cloud::InstanceType
 
 [![Build Status](https://travis-ci.org/suse-enceladus/rubygem-cloud-instancetype.svg?branch=master)](https://travis-ci.org/suse-enceladus/rubygem-cloud-instancetype)
+[![Gem Version](https://badge.fury.io/rb/cloud-instancetype.svg)](https://badge.fury.io/rb/cloud-instancetype)
 
 Public Clouds have _a lot_ of instance types. You don't want to make your users choose from every instance type under the sun; better to hand pick a few appropriate instance types and present them in a simple user interface.
 
