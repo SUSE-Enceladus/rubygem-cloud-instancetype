@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    cloud-instancetype (0.0.1)
+    cloud-instancetype (0.0.2)
 
 GEM
   remote: https://rubygems.org/
@@ -31,11 +31,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler
+  bundler (~> 2.0)
   cloud-instancetype!
-  pry
-  rake
-  rspec
+  pry (~> 0.12)
+  rake (~> 12.3)
+  rspec (~> 3.8)
 
 BUNDLED WITH
    2.0.2
