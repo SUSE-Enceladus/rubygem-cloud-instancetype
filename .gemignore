@@ -1,0 +1,4 @@
+spec
+.ruby-gemset
+.ruby-version
+.travis.yml

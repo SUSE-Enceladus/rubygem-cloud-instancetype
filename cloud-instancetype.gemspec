@@ -12,11 +12,9 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{Describe public cloud instance types}
   spec.homepage      = "https://github.com/suse-enceladus/rubygem-cloud-instancetype"
 
-  # Specify which files should be added to the gem when it is released.
-  # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
-  spec.files         = Dir.chdir(File.expand_path('..', __FILE__)) do
-    `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-  end
+  git_tracked_files = `git ls-files -z`.split("\x0")
+  gem_ignored_files = `git ls-files -i -X .gemignore -z`.split("\x0")
+  spec.files = git_tracked_files - gem_ignored_files
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
