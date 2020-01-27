@@ -1,0 +1,6 @@
+.gemignore
+.gitignore
+.ruby-gemset
+.ruby-version
+.travis.yml
+spec
