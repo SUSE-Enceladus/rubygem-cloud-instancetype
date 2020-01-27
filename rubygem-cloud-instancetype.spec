@@ -1,5 +1,5 @@
 #
-# spec file for package blue-horizon
+# spec file for package rubygem-cloud-instancetype
 # this code base is under development
 #
 # Copyright (c) 2020 SUSE LLC
