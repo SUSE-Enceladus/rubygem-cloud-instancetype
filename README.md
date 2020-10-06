@@ -60,6 +60,8 @@ Either way, the return is a collection of `InstanceType`, so iterate along your 
 ```
 instance_types.each do |instance_type|
     puts instance_type.key
+    puts instance_type.name
+    puts instance_type.vcpu_count
     puts instance_type.category.features
 end
 ```

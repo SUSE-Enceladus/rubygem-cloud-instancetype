@@ -17,7 +17,7 @@
 #
 
 Name:           rubygem-cloud-instancetype
-Version:        0.0.3
+Version:        1.0.0
 Release:        0
 %define mod_name cloud-instancetype
 %define mod_full_name %{mod_name}-%{version}

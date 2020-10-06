@@ -1,0 +1,36 @@
+{
+    "categories": {
+        "category_1_key": {
+            "name": "Category 1",
+            "description": "Description of category 1.",
+            "features": [
+                "Feature 1",
+                "Feature 2"
+            ]
+        },
+        "category_2_key": {
+            "name": "Category 2"
+        }
+    },
+    "instance_types": {
+        "type_1": {
+            "sort_value": "10",
+            "name": "Type #1",
+            "category": "category_2_key",
+            "vcpu_count": 1,
+            "ram_bytes": 1,
+            "ram_si_units": true,
+            "details": {}
+        },
+        "type_2": {
+            "sort_value": "01",
+            "name": "Type #2",
+            "category": "category_1_key",
+            "details": {}
+        },
+        "type_3": {
+            "sort_value": "20",
+            "name": "Type #3"
+        }
+    }
+}
