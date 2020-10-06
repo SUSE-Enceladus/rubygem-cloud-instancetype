@@ -1,6 +1,5 @@
 #
 # spec file for package rubygem-cloud-instancetype
-# this code base is under development
 #
 # Copyright (c) 2020 SUSE LLC
 #
@@ -13,8 +12,9 @@
 # license that conforms to the Open Source Definition (Version 1.9)
 # published by the Open Source Initiative.
 
-# Please submit bugfixes or comments via http://bugzilla.suse.com/
+# Please submit bugfixes or comments via https://bugs.opensuse.org/
 #
+
 
 Name:           rubygem-cloud-instancetype
 Version:        1.0.0
@@ -25,10 +25,11 @@ BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 BuildRequires:  %{rubygem gem2rpm}
 BuildRequires:  %{ruby}
 BuildRequires:  ruby-macros >= 5
-Url:            https://github.com/suse-enceladus/rubygem-cloud-instancetype
-Source:         http://rubygems.org/gems/%{mod_full_name}.gem
+URL:            https://github.com/suse-enceladus/rubygem-cloud-instancetype
+Source:         https://rubygems.org/gems/%{mod_full_name}.gem
 Summary:        Describe public cloud instance types
-License:        GPL-3.0
+License:        GPL-3.0-only
+Group:          Development/Languages/Ruby
 
 %description
 Describe public cloud instance types.
