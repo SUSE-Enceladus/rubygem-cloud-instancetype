@@ -3,5 +3,5 @@ sudo: false
 language: ruby
 cache: bundler
 rvm:
-  - 2.5.5
-script: 'bundle exec rake'
+  - 2.5
+script: 'bundle exec rspec'
