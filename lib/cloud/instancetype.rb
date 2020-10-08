@@ -29,7 +29,9 @@ module Cloud
 
     class << self
       def for(cloud)
-        load(rails_data_path(cloud))
+        load(rails_vendor_path(cloud))
+      rescue
+        load(rails_config_path(cloud))
       end
 
       def load(data_path)
@@ -42,8 +44,12 @@ module Cloud
 
       private
 
-      def rails_data_path(cloud)
+      def rails_config_path(cloud)
         Rails.root.join("config", "data", "#{cloud}-types.json")
+      end
+
+      def rails_vendor_path(cloud)
+        Rails.root.join("vendor", "data", "#{cloud}-types.json")
       end
 
       def get_raw_collection(data_path)
