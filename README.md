@@ -35,7 +35,7 @@ Config files are JSON, and contain structured information about both the instanc
 
 ### Rails
 
-Place your instance type data in `config/data/#{cloud}-types.json`.
+Place your default instance type data in `config/data/#{cloud}-types.json`, or override with `vendor/data/#{cloud}-types.json`.
 
 Load your instance types by the framework key:
 

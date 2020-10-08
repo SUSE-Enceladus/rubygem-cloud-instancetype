@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    cloud-instancetype (1.0.0)
+    cloud-instancetype (1.1.0)
 
 GEM
   remote: https://rubygems.org/
